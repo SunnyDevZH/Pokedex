@@ -1,0 +1,31 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="./img/pokeball.png" width="32px">
+<title>PokeDex</title>
+</head>
+<body onload="render()">
+
+    <div class="popup" id="popup">
+    <div class="infoCard" id="infoCard">
+    </div>
+    </div>
+    
+    <header class="navbar">
+    <span class="logo"><a href="#">PokeDex</a></span>
+    <input type="search" id="searchPokemon" placeholder="Pokemon suchen" onchange="filterNames()">
+    </header>
+    <div class="content" id="content">
+    
+    </div>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <div class="footer">
+    <button class="loadBtn" onclick="loadMore()">Mehr laden...</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+</body>
